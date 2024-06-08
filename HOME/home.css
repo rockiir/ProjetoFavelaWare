@@ -1,0 +1,14 @@
+
+body{
+    background: fixed;
+    background-image:url(../image/logo.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll ; 
+
+}
+
+.logo{
+width: 100px;
+height: 50;
+}
