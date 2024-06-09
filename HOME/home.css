@@ -1,6 +1,6 @@
 
 body{
-    background: fixed;
+    background: fixed; /*olhar o site marcado "m"*/
     background-image:url(../image/logo.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -10,5 +10,4 @@ body{
 
 .logo{
 width: 100px;
-height: 50;
 }
