@@ -71,11 +71,20 @@ header .logo img{
   background-color: #F2EAE7;
   filter: opacity(50px);
   display: flex;
+  text-align: center; 
+  font-size: 35px;
+ 
+ img{
+  width: 696px;
+ height: 395px;
+object-fit: cover;
+  }
 }
 
 .B2{
 background-color: #F3F8F0; 
 display: flex;
+text-align: center;
 }
 
 .B3{
@@ -87,6 +96,23 @@ fill-opacity: 20%;
   background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,0.7624299719887955) 0%, rgba(169,128,111,0.7736344537815126) 79%, rgba(240,240,240,0.7652310924369747) 100%);
 }
+
+.B4 h1{
+  text-align: left;
+ top:px;
+}
+
+.B4 h3{
+  text-align: right;
+}
+
+.btm{
+  background-color: black;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
 
 footer{
   text-align: center;
