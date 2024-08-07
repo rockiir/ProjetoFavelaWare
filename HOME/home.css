@@ -56,11 +56,11 @@ header .logo img{
  font-size: 25px;
  /* colocar aqui a fonte importada */
  /* Atualizando o padding da tag <p> */
- p{
+ }
+
+ .logo p{
   padding: 5px;
  }
-}
-
 
 
 
@@ -72,14 +72,14 @@ header .logo img{
   display: flex;
   text-align: center; 
   font-size: 35px;
- 
- img{
-  width: 696px;
- height: 395px;
-object-fit: cover;
-  }
+
 }
 
+.B1 img{
+  width: 696px;
+  height: 395px;
+ object-fit: cover;
+}
 .B2{
 background-color: #F3F8F0; 
 display: flex;
@@ -103,6 +103,17 @@ background: linear-gradient(90deg, rgba(255,255,255,0.7624299719887955) 0%, rgba
 
 .B4 h3{
   text-align: right;
+}
+
+/*Caixas*/
+
+.caixas{
+  display: flex;
+  
+}
+
+.caixas div{
+  padding: 2%
 }
 
 .btm{
