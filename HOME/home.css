@@ -18,10 +18,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 1rem;
-
-  background-color: var(--color-roseta);
+  background-color: blue
+ border: black solid 5px; 
 }
 
 /* configurações da navbar do cabeçalho */
@@ -61,84 +60,3 @@ header .logo img {
   padding: 5px;
 }
 
-/* Divisorias B1, B2, B3. */
-
-.B1 {
-  background-color: #dc4c5c;
-  filter: opacity(50px);
-  display: flex;
-  text-align: center;
-  font-family: "Wix Madefor Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-}
-
-.B1 img {
-  width: 696px;
-  height: 395px;
-  object-fit: cover;
-}
-.B2 {
-  background-color: #f3f8f0;
-  display: flex;
-  text-align: center;
-  font-family: "Wix Madefor Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-}
-
-.B3 {
-  width: 90%;
-  background-color: #f2eae7;
-  fill-opacity: 20%;
-  text-align: center;
-  font-family: "Wix Madefor Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-}
-
-.B4 {
-  color: darkblue;
-}
-
-.B4 h1 {
-  text-align: left;
-  top: px;
-}
-
-.B4 h3 {
-  text-align: right;
-}
-
-/*Caixas*/
-
-.caixas {
-  display: flex;
-  background: rgb(100, 100, 100);
-  background: linear-gradient(
-    126deg,
-    rgba(100, 100, 100, 1) 24%,
-    rgba(127, 25, 36, 1) 81%
-  );
-}
-
-.caixas div {
-  padding: 2%;
-}
-
-.btm {
-  background-color: black;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-}
