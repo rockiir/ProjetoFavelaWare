@@ -1,89 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,631;1,631&display=swap");
 
-body {
-  background-color: rgb(194, 84, 84);
+* {
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* Cabeçalho fixo no topo */
+/* O corpo da pagina altero tudo que esta dentro do body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #be4d4d;
+  color: #333;
+  line-height: 1.6;  /*espaço entre os as linhas do texto*/
+}
+/* Cabeçalho (meu navbar) */
 header {
-  width: 100vw;
-  height: 3.5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: blue;
-  z-index: 1000;
-}
-
-header .navegacao nav ul {
-  display: flex;
-  gap: 1rem;
-}
-
-header .navegacao nav ul li {
-  list-style: none;
-}
-
-header .navegacao nav ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Logo no canto esquerdo */
-header .logo img {
-  width: 150px;
-}
-
-/* Layout principal centralizado */
-main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 5rem; /* Para evitar sobreposição do header */
-  width: 90%;
-  margin: 0 auto;
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 20px;
 }
-
+/* Altero minha lista dentro da minha navbar */
+.navegacao ul {
+  list-style: none;
+  display: flex;
+}
+/* Altero meus itens dentro da minha lista */
+.navegacao ul li {
+  margin: 0 15px;
+}
+/* Altero dentro da minha tag a da navbar */
+.navegacao ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* onde eu tudo que tem no meu container (no caso minhas caixas/divs)*/
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding: 20px;
+ 
+}
+/* Estilizo especificadamente em dentro das minhas divs */
+.container div {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px rgba(193, 105, 105, 0.905);
+  width: 100%;
+}
+/* Atualizo todas as tags h1,h2 e h3 do meu container*/
+.container h1, h2, h3 {
+  color: #35424a;
+}
+/* estilizo minhas divs b1,b2 e b3 ao mesmo tempo */
+.b1, .b2 {
   width: 100%;
 }
 
-.b1, .b2, .b3 {
-  background-color: white;
-  width: 80%;
-  margin: 20px 0;
-  padding: 20px;
-  border: 5px solid rgba(226, 180, 180, 0.816);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.footer-container {
+  width: 100%; /* Largura completa */
+  background-color: #35424a; /* Cor de fundo da caixa */
+  padding: 20px 0; /* Espaçamento interno */
+  display: flex; /* Usando flexbox para centralização */
+  justify-content: center; /* Centraliza horizontalmente */
 }
 
-.b1, .b2 {
-  background-color: rgb(247, 247, 247);
+footer {
+  color: #ffffff; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
 }
 
-/* b3 com destaque especial */
-.b3 {
-  background-color: white;
+footer h2 {
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
 }
 
-.b3 img {
-  width: 150px;
-  margin: 10px;
+footer a {
+  margin: 0 15px; /* Espaçamento entre os links */
+  display: inline-block; /* Para permitir margens ao redor da imagem */
 }
+
+footer img {
+  max-width: 100px; /* Largura máxima das imagens */
+  height: auto; /* Mantém a proporção das imagens */
+  transition: transform 0.3s; /* Transição suave para efeitos */
+}
+/* Aumenta a imagem ao passar o mouse Escala a imagem 110% */
+footer img:hover {
+  transform: scale(1.1);
+}
+
+
+
