@@ -1,70 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,631;1,631&display=swap"); /* Importação da fonte Madefor*/
-
-@import url(../HOME/color.css);
-
-/* configurações da pagina toda */
-
-* {
-  padding: 0;
+body {
+  font-family: 'Wix Madefor Text', sans-serif;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
-
-/* configurações do cabeçalho*/
 
 header {
-  position: fixed;
-  width: 100vw;
-  height: 3.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  z-index: 1000;
-  background-color: blue;
-  border-color: black;
-  border: 2px solid;
- 
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* configurações da navbar do cabeçalho*/
-
-header .navegacao nav ul {
-  display: flex;
-  gap: 1rem;
+.logo img {
+  max-height: 60px; /* Ajuste a altura da logo se necessário */
 }
 
-header .navegacao nav ul li {
+.navegacao ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-header .navegacao nav ul li a {
-  color: rgb(0, 0, 0);
+.navegacao li {
+  margin-left: 20px;
+}
+
+.navegacao a {
   text-decoration: none;
+  color: rgb(194, 84, 84);
+}
+/* Alterar pra colocar as medidas nos dois carroçol */
+.carousel-inner img {
+  object-fit: cover;
 }
 
-/* confiurações da logo do cantinho */
-
-header .logo img {
-  width: 16%;
-  margin: 10px 10px 10px 10px;
-}
-
-/* Texto ao lado da imagem*/
-
-.logo {
+.B1, .B2 {
   display: flex;
   align-items: center;
-  font-size: 25px;
-  /* colocar aqui a fonte importada */
-  /* Atualizando o padding da tag <p> */
+  margin: 20px 0;
 }
 
-.logo p {
-  padding: 5px;
+.B1 img, .B2 img {
+  max-width: 150px; /* Ajuste o tamanho das imagens ao lado do texto */
+  margin-right: 20px;
 }
 
-.carousel-control-next-icon{
-  position: relative;
-  z-index: 500;
+.caixas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(240, 240, 240); /* Fundo opcional */
+}
+
+.B4 {
+  text-align: right; /* Alinha os textos a direita */
+}
+
+h3 {
+
+.btm {
+  margin: 5px 0; /* Espaçamento entre os botões */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(194, 84, 84);
+  color: white;
+}
+
+footer h5 {
+  margin: 0;
 }

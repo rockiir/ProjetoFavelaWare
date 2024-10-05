@@ -1,99 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,631;1,631&display=swap");
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* O corpo da pagina altero tudo que esta dentro do body */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #be4d4d;
-  color: #333;
-  line-height: 1.6;  /*espaço entre os as linhas do texto*/
+  background-color: #f4f4f4;
+  color: #6e151f;
+  padding-top: 80px; /* Espaço para a navbar fixa */
 }
-/* Cabeçalho (meu navbar) */
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #dc4c5c;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #35424a;
-  color: #ffffff;
-  padding: 20px;
+  padding: 0 20px;
+  z-index: 1000;
 }
-/* Altero minha lista dentro da minha navbar */
+
+header .logo img {
+  height: 60px;
+}
+
 .navegacao ul {
   list-style: none;
   display: flex;
 }
-/* Altero meus itens dentro da minha lista */
+
 .navegacao ul li {
-  margin: 0 15px;
+  margin-left: 20px;
 }
-/* Altero dentro da minha tag a da navbar */
+
 .navegacao ul li a {
-  color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
 }
-/* onde eu tudo que tem no meu container (no caso minhas caixas/divs)*/
+
+.navegacao ul li a:hover {
+  color: #e9909a;
+}
+
+/* Main container */
 .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section styling */
+.container > div {
+  margin-bottom: 40px;
+}
+
+.container .b1, .container .b2 {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #e9909a;
   padding: 20px;
- 
+  border-radius: 10px;
 }
-/* Estilizo especificadamente em dentro das minhas divs */
-.container div {
-  background-color: #ffffff;
+
+.container .b1 img, .container .b2 img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.container .b1 h1, .container .b2 h1 {
+  color: #6e151f;
+}
+
+.container .b1 h4, .container .b2 h4 {
+  color: #fff;
+  margin-right: 20px;
+  width: 55%;
+}
+
+.container .b1 img, .container .b2 img {
+  margin-left: 20px;
+}
+
+.container div:not(.b1, .b2) {
+  text-align: center;
   padding: 20px;
+}
+
+.container div h1 {
   margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 10px 10px rgba(193, 105, 105, 0.905);
-  width: 100%;
-}
-/* Atualizo todas as tags h1,h2 e h3 do meu container*/
-.container h1, h2, h3 {
-  color: #35424a;
-}
-/* estilizo minhas divs b1,b2 e b3 ao mesmo tempo */
-.b1, .b2 {
-  width: 100%;
 }
 
+.container div h4 {
+  color: #6e151f;
+}
+
+/* Footer Styling */
 .footer-container {
-  width: 100%; /* Largura completa */
-  background-color: #35424a; /* Cor de fundo da caixa */
-  padding: 20px 0; /* Espaçamento interno */
-  display: flex; /* Usando flexbox para centralização */
-  justify-content: center; /* Centraliza horizontalmente */
-}
-
-footer {
-  color: #ffffff; /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
+  background-color: #dc4c5c;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
 }
 
 footer h2 {
-  margin-bottom: 15px; /* Espaçamento abaixo do título */
-}
-
-footer a {
-  margin: 0 15px; /* Espaçamento entre os links */
-  display: inline-block; /* Para permitir margens ao redor da imagem */
+  color: #fff;
 }
 
 footer img {
-  max-width: 100px; /* Largura máxima das imagens */
-  height: auto; /* Mantém a proporção das imagens */
-  transition: transform 0.3s; /* Transição suave para efeitos */
-}
-/* Aumenta a imagem ao passar o mouse Escala a imagem 110% */
-footer img:hover {
-  transform: scale(1.1);
+  width: 100px;
+  margin: 10px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container .b1, .container .b2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container .b1 img, .container .b2 img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .container .b1 h4, .container .b2 h4 {
+    width: 100%;
+  }
+}
 
 
+
+
+
+
+ #dc4c5c 
+ #e9909a 
+ #6e151f 
+ #646464 
+ #7f1924 
