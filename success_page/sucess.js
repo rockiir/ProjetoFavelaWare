@@ -3,21 +3,43 @@ const apiUrl = "https://forge.withub.ai/api/triggers/5257a02d-c19b-4969-ab81-220
 
 // Dados que você quer enviar
 const data = {
-    prato: "feijão tropeiro" // Aqui está o dado 'prato' que está sendo enviado
+    prato: "canjiquinha"
 };
 
 // Fazendo a requisição POST para a API
 fetch(apiUrl, {
-    method: 'POST', // Método HTTP POST
+    method: 'POST',
     headers: {
-        'Content-Type': 'application/json', // Define o tipo de conteúdo como JSON
+        'Content-Type': 'application/json',
     },
-    body: JSON.stringify(data) // Converte os dados para JSON e envia no corpo da requisição
+    body: JSON.stringify(data)
 })
-.then(response => response.json()) // Converte a resposta da API para JSON
-.then(data => {
-    console.log('Sucesso:', data); // Exibe os dados recebidos da API
+.then(response => response.text()) // Aqui pegamos o resultado como texto puro
+.then(text => {
+    console.log('Resposta completa da API:', text); // Exibe o resultado completo da API como texto
+
+    // Seleciona o elemento onde os dados serão exibidos
+    const resultadoDiv = document.getElementById('resultado');
+
+    // Usando expressão regular para extrair o campo 'historia'
+    const regex = /"historia":"(.*?)"/; // Expressão regular para capturar o conteúdo de 'historia'
+    const match = text.match(regex); // Executa a expressão regular na string de resposta
+
+    if (match && match[1]) {
+        let historia = match[1]; // O conteúdo da 'historia' está no primeiro grupo de captura
+
+        // Remove as referências no formato [n]
+        historia = historia.replace(/\[\d+\]/g, '').trim(); // Remove todas as referências como [1], [2], etc.
+
+        // Exibe a história formatada no HTML
+        resultadoDiv.innerHTML = `
+            <h2>História do Prato: ${data.prato}</h2>
+            <p>${historia}</p>
+        `;
+    } else {
+        resultadoDiv.innerHTML = `<p>História não encontrada.</p>`; // Caso a história não seja encontrada
+    }
 })
 .catch(error => {
-    console.error('Erro:', error); // Captura e exibe qualquer erro que ocorrer
+    console.error('Erro:', error); // Exibe erros se ocorrerem
 });
