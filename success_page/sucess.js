@@ -3,7 +3,7 @@ const apiUrl = "https://forge.withub.ai/api/triggers/5257a02d-c19b-4969-ab81-220
 
 // Dados que você quer enviar
 const data = {
-    prato: "canjiquinha"
+    prato: "risoto"
 };
 
 // Fazendo a requisição POST para a API

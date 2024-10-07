@@ -1,150 +1,127 @@
+/* Importando a fonte */
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,631;1,631&display=swap");
 
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Aplicando a fonte à página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #6e151f;
-  padding-top: 80px; /* Espaço para a navbar fixa */
+    font-family: 'Wix Madefor Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #88001f; /* Cor de fundo mais escura */
+    color: #ffffff; /* Texto branco para contraste */
 }
 
+/* Estilo do cabeçalho */
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #dc4c5c;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  z-index: 1000;
+    background-color: #db445b; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header .logo img {
-  height: 60px;
+/* Logo */
+.logo img {
+    max-width: 100px; /* Define o tamanho máximo da logo */
 }
 
-.navegacao ul {
-  list-style: none;
-  display: flex;
+/* Navegação */
+.navegacao nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.navegacao ul li {
-  margin-left: 20px;
+.navegacao nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.navegacao ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+.navegacao nav a {
+    text-decoration: none;
+    color: #ffffff; /* Cor dos links de navegação */
 }
 
-.navegacao ul li a:hover {
-  color: #e9909a;
-}
-
-/* Main container */
+/* Estilo do container principal */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    padding: 40px;
 }
 
-/* Section styling */
-.container > div {
-  margin-bottom: 40px;
+/* Estilo das seções */
+.section-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    background-color: #c6334c; /* Cor de fundo das seções */
+    border-radius: 10px; /* Arredondando os cantos da borda */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
-.container .b1, .container .b2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #e9909a;
-  padding: 20px;
-  border-radius: 10px;
+.section-row.reverse {
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos (texto e imagem) */
 }
 
-.container .b1 img, .container .b2 img {
-  width: 40%;
-  border-radius: 10px;
-}
-
-.container .b1 h1, .container .b2 h1 {
-  color: #6e151f;
-}
-
-.container .b1 h4, .container .b2 h4 {
-  color: #fff;
-  margin-right: 20px;
-  width: 55%;
-}
-
-.container .b1 img, .container .b2 img {
-  margin-left: 20px;
-}
-
-.container div:not(.b1, .b2) {
-  text-align: center;
-  padding: 20px;
-}
-
-.container div h1 {
-  margin-bottom: 20px;
-}
-
-.container div h4 {
-  color: #6e151f;
-}
-
-/* Footer Styling */
-.footer-container {
-  background-color: #dc4c5c;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 40px;
-}
-
-footer h2 {
-  color: #fff;
-}
-
-footer img {
-  width: 100px;
-  margin: 10px;
-}
-
-/* Responsive adjustments */
+/* Responsividade específica para telas menores */
 @media (max-width: 768px) {
-  .container .b1, .container .b2 {
-    flex-direction: column;
-    text-align: center;
-  }
+    .section-row, .section-row.reverse {
+        flex-direction: column; /* Empilha texto e imagem verticalmente */
+    }
 
-  .container .b1 img, .container .b2 img {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .container .b1 h4, .container .b2 h4 {
-    width: 100%;
-  }
+    .image img {
+        max-width: 90%; /* Em telas pequenas, as imagens ocupam 90% da largura */
+    }
 }
 
+.text {
+    flex: 1;
+    padding: 20px;
+}
 
+.image {
+    flex: 1;
+    padding: 20px;
+}
 
+/* Ajustando imagens para ter o mesmo tamanho do texto */
+.image img {
+    width: 100%; /* Ocupa 100% da largura do container */
+    max-width: 600px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem se encaixe no espaço sem distorcer */
+}
 
+/* Estilo do footer */
+.footer-container {
+    background-color: #9d112e; /* Cor de fundo do footer */
+    padding: 20px;
+    text-align: center;
+}
 
+.footer-container h2 {
+    color: #db445b; /* Cor do título no footer */
+}
 
- #dc4c5c 
- #e9909a 
- #6e151f 
- #646464 
- #7f1924 
+.footer-container img {
+    max-width: 150px; /* Define o tamanho das imagens do footer */
+    margin: 10px;
+}
+
+/* Estilo adicional para títulos e parágrafos */
+h1, h4 {
+    color: #ffffff; /* Títulos e parágrafos com texto em branco */
+}
+
+h1 {
+    border-bottom: 2px solid #b2223d; /* Borda embaixo dos títulos para destaque */
+    padding-bottom: 10px;
+}
+
+h4 {
+    color: #e29e73; /* Parágrafos com um tom de rosa mais claro */
+}
+
+.section-row:hover {
+    background-color: #b2223d; /* Muda a cor de fundo ao passar o mouse sobre a seção */
+    transition: background-color 0.3s; /* Suaviza a transição da cor */
+}

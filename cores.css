@@ -1,0 +1,12 @@
+/* PAGINA SOBRE NOS CORES */
+:root {
+    --cor-fundo-pagina: #88001f; /* Cor de fundo da página */
+    --cor-cabecalho: #db445b; /* Cor de fundo do cabeçalho */
+    --cor-link: #ffffff; /* Cor dos links na navegação */
+    --cor-secao-fundo: #c6334c; /* Cor de fundo das seções */
+    --cor-footer: #9d112e; /* Cor de fundo do footer */
+    --cor-titulo: #ffffff; /* Cor dos títulos (h1, h4) */
+    --cor-borda-titulo: #b2223d; /* Cor da borda dos títulos */
+    --cor-texto-paragrafo: #e29e73; /* Cor do texto dos parágrafos (h4) */
+    --cor-hover-secao: #b2223d; /* Cor de fundo das seções ao passar o mouse */
+}
