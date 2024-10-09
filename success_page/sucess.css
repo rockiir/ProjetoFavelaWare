@@ -1,0 +1,93 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+    display: flex; /* Flexbox para centralizar os elementos */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #6e151f; /* Cor do título */
+}
+
+/* Estilização da seção de input */
+.input-section {
+    background: #fff; /* Fundo branco para seções */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px; /* Aumenta o espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada seção */
+    width: 100%; /* Largura total */
+    max-width: 800px; /* Aumenta a largura máxima */
+    display: flex; /* Flexbox para centralizar os inputs e botão */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente os itens */
+}
+
+/* Estilização do campo de input */
+input[type="text"] {
+    width: 100%; /* Largura total */
+    padding: 15px; /* Aumenta o espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 15px; /* Espaçamento abaixo do input */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilização do botão */
+button {
+    background-color: #6e151f; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 15px 20px; /* Aumenta o espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    width: 100%; /* Largura total para o botão */
+    max-width: 250px; /* Aumenta a largura máxima do botão */
+}
+
+/* Estilização do botão ao passar o mouse */
+button:hover {
+    background-color: #b2223d; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização da seção de resultado */
+.resultado-section {
+    background: #fff; /* Fundo branco */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    max-width: 800px; /* Aumenta a largura máxima */
+}
+
+/* Estilização do conteúdo do resultado */
+.resultado-content {
+    margin-top: 10px; /* Espaçamento acima do conteúdo de resultado */
+    padding: 15px; /* Espaçamento interno */
+    background: #f0f0f0; /* Fundo cinza claro para o conteúdo de resultado */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilização do título de resultado */
+.resultado-section h2 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título de resultado */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte do título */
+}

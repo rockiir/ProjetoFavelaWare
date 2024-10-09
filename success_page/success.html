@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exibir Dados da API</title>
+    <title>Forge Curiosidade</title>
+    <link rel="stylesheet" href="sucess.css"> <!-- Link para o seu arquivo CSS -->
 </head>
 <body>
-    <h1>Dados recebidos da API</h1>
-    <div id="resultado"></div> <!-- Local onde os dados serão exibidos -->
+    <header>
+        <h1>Vamos descobrir mais sobre um prato!</h1>
+    </header>
+    
+    <main>
+        <section class="input-section">
+            <h2>Enviar Dados</h2>
+            <input type="text" id="pratoInput" placeholder="Digite o nome do prato">
+            <button id="enviarButton">Enviar</button>
+        </section>
+
+        <section id="resultado" class="resultado-section">
+            <h2>Resultado</h2>
+            <div class="resultado-content"></div> <!-- Local onde os dados serão exibidos -->
+        </section>
+    </main>
 
     <script src="sucess.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
