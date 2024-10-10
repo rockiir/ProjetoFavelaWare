@@ -1,12 +1,16 @@
 /* Importando a fonte */
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,631;1,631&display=swap");
+*{
+    font-size: 15px;
+  }
+  
 
 /* Aplicando a fonte à página */
 body {
     font-family: 'Wix Madefor Text', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #88001f; /* Cor de fundo mais escura */
+    background-color: #ffffff; /* Cor de fundo mais escura */
     color: #ffffff; /* Texto branco para contraste */
 }
 
@@ -17,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: #88001f 4px 3px 5px;
 }
 
 /* Logo */
@@ -37,7 +42,7 @@ header {
 
 .navegacao nav a {
     text-decoration: none;
-    color: #000000; /* Cor dos links de navegação */
+    color: rgb(194, 84, 84); /* Cor dos links de navegação */
 }
 
 /* Estilo do container principal */
@@ -53,10 +58,10 @@ header {
     cursor: pointer;
     margin-bottom: 50px;
     flex-wrap: wrap; /* Permite que os itens se ajustem movendo-se para a próxima linha em telas menores */
-    background-color: #060505a6; 
+    background-color: #88001f; 
     border-radius: 10px;
     padding: 20px; /* Espaçamento interno */
-    box-shadow: 10px 0px 0px 10px rgba(0, 0, 0, 0.813); /* Sombra para profundidade */
+    box-shadow: 10px 0px 0px 10px rgb(69, 10, 10); /* Sombra para profundidade */
 }
 
 .section-row.reverse {
@@ -95,13 +100,13 @@ header {
 /* Estilo do footer */
 /* Estilo do footer */
 .footer-container {
-    background-color: #ffffffec; /* Cor de fundo do footer */
+    background-color: #c60025 ; /* Cor de fundo do footer */
     padding: 20px;
     text-align: center;
 }
 
 .footer-container h2 {
-    color: #000000; /* Cor do título no footer */
+    color: #ffffff; /* Cor do título no footer */
 }
 
 .footer-container img {
@@ -111,7 +116,7 @@ header {
 
 /* Novo estilo para o item h5 */
 .footer-container h5 {
-    color: #88001f; /* Define a cor do texto */
+    color: #f7f7f7; /* Define a cor do texto */
     font-style: italic; /* Estilo itálico */
     margin-top: 10px; /* Margem superior para espaçamento */
     font-size: 0.9em; /* Tamanho da fonte menor */

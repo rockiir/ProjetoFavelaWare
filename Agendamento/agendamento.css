@@ -1,61 +1,57 @@
-/* configurações da pagina toda */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  
-  /* configurações do cabeçalho*/
-  
-  header {
-    width: 100vw;
-    height: 5.1rem;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    padding: 1rem;
-  
-   background-color:black
-  }
-  
-  /* configurações da navbar do cabeçalho */
-  
-  header .navegacao nav ul {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  header .navegacao nav ul li {
-    list-style: none;
-  }
-  
-  header .navegacao nav ul li a {
-    color: white;
-  
-    text-decoration: none;
-  }
-  
-  /* confiurações da logo do cantinho */
-  
-  
-  header .logo img{
-    width: 93px;
-  }
-  
-  /* Texto ao lado da imagem*/
-  
-  .logo {
-   display: flex;
-   align-items: center;
-   font-size: 25px;
-   /* colocar aqui a fonte importada */
-   /* Atualizando o padding da tag <p> */
-   p{
-    padding: 5px;
-   }
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  margin: 15px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.card .preco {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.button {
+  margin-top: 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

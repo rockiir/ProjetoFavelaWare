@@ -1,3 +1,7 @@
+*{
+  font-size: 15px;
+}
+
 body {
   font-family: 'Wix Madefor Text', sans-serif;
   margin: 0;
@@ -9,6 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  box-shadow: #88001f 4px 3px 5px;
 }
 
 .logo img {
