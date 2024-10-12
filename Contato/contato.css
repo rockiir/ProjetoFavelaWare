@@ -1,95 +1,113 @@
+/* Aplica margin e padding zero a todos os elementos para remover espaçamentos padrão, 
+e usa box-sizing para incluir bordas e paddings nas dimensões dos elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: #88001f 4px 3px 5px;
-}
-
-.logo img {
-  max-height: 60px; /* Ajuste a altura da logo se necessário */
-}
-
-.navegacao ul {
-  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Define a fonte padrão do site */
 }
 
+/* Estiliza o body, definindo a cor de fundo e a cor padrão do texto */
+body {
+  background-color: #f5f5f5; /* Cor de fundo cinza claro */
+  color: #333; /* Cor do texto padrão (preto acinzentado) */
+}
+
+/* Estiliza o header, definindo sua exibição flexível para alinhamento entre logo e navegação */
+header {
+display: flex; /* Flexbox para alinhar logo e navegação */
+justify-content: space-between; /* Espaço entre logo e menu de navegação */
+align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+padding: 10px 20px; /* Espaçamento interno no topo e nas laterais */
+box-shadow: #88001f 4px 3px 5px; /* Sombra aplicada ao header */
+}
+
+/* Estiliza a logo dentro do header */
+.logo img {
+max-height: 60px; /* Define a altura máxima da logo */
+}
+
+/* Estiliza a lista de navegação dentro do header */
+.navegacao ul {
+list-style: none; /* Remove os marcadores da lista */
+margin: 0;
+padding: 0;
+display: flex; /* Exibe os itens de navegação lado a lado */
+}
+
+/* Estiliza cada item da lista de navegação */
 .navegacao li {
-  margin-left: 20px;
+margin-left: 20px; /* Adiciona espaço entre os itens da navegação */
 }
 
+/* Estiliza os links da navegação */
 .navegacao a {
-  text-decoration: none;
-  color: rgb(194, 84, 84);
+text-decoration: none; /* Remove o sublinhado dos links */
+color: rgb(194, 84, 84); /* Define a cor do texto dos links */
 }
+
+/* Estiliza a seção do formulário de contato */
 .contact-form-section {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Define a largura máxima do formulário */
+  margin: 50px auto; /* Centraliza a seção com margens no topo e embaixo */
+  background-color: white; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar a seção */
 }
 
+/* Estiliza o título da seção do formulário */
 .contact-form-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #88001f;
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  color: #88001f; /* Define a cor do título */
 }
 
+/* Define o estilo dos grupos de formulário (cada campo) */
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px; /* Adiciona espaço entre os campos */
 }
 
+/* Define o estilo das labels (rótulos) dos campos do formulário */
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #6e151f;
+  display: block; /* Faz com que as labels ocupem a largura inteira */
+  margin-bottom: 5px; /* Espaço entre a label e o campo */
+  color: #6e151f; /* Cor do texto das labels */
 }
 
+/* Estiliza os inputs e áreas de texto */
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%; /* Faz com que os campos ocupem a largura total do container */
+  padding: 10px; /* Espaçamento interno nos campos */
+  border: 1px solid #ccc; /* Define uma borda cinza clara */
+  border-radius: 5px; /* Bordas arredondadas */
+  resize: none; /* Impede que a área de texto seja redimensionada */
 }
 
+/* Estiliza o botão de envio */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color:#c60025;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  width: 100%; /* O botão ocupa toda a largura do container */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #c60025; /* Cor de fundo vermelha */
+  border: none; /* Remove a borda padrão */
+  color: white; /* Cor do texto branco */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  border-radius: 5px; /* Bordas arredondadas no botão */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
+/* Altera a cor de fundo do botão ao passar o mouse */
 button:hover {
-    background-color: #6c041c;
+  background-color: #6c041c; /* Muda a cor de fundo para um tom mais escuro */
 }
 
+/* Estiliza o rodapé */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color:#c60025;
-    color: white;
-    margin-top: 50px;
+  text-align: center; /* Centraliza o texto do rodapé */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #c60025; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branco */
+  margin-top: 50px; /* Adiciona espaço acima do rodapé */
 }

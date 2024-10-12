@@ -1,112 +1,143 @@
+/* Define a fonte geral, cor de fundo da página e remove margens e espaçamento ao redor do conteúdo */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 20px;
-}
-*{
-  font-size: 15px;
+  font-family: Arial, sans-serif; /* Define a fonte padrão Arial */
+  background-color: #f4f4f4; /* Cor de fundo da página */
+  margin: 0; /* Remove margens padrão */
+  padding: 20px; /* Adiciona 20px de espaçamento interno */
 }
 
-body {
-  font-family: 'Wix Madefor Text', sans-serif;
-  margin: 0;
-  padding: 0;
+/* Define o tamanho de fonte globalmente para todos os elementos */
+* {
+  font-size: 15px; /* Tamanho de fonte padrão de 15px */
 }
 
+/* Altera a fonte do corpo para uma fonte customizada */
+body {
+  font-family: 'Wix Madefor Text', sans-serif; /* Define uma fonte alternativa */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove o espaçamento interno */
+}
+
+/* Estilo do cabeçalho */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: #88001f 4px 3px 5px;
+  display: flex; /* Usa Flexbox para posicionamento */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  padding: 10px 20px; /* Adiciona espaçamento interno ao header */
+  box-shadow: #88001f 4px 3px 5px; /* Aplica sombra com cor e dimensões especificadas */
 }
 
+/* Estilo da logo */
 .logo img {
-  max-height: 60px; /* Ajuste a altura da logo se necessário */
+  max-height: 60px; /* Limita a altura da imagem da logo */
 }
 
+/* Estilo da lista de navegação */
 .navegacao ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  list-style: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove o espaçamento interno */
+  display: flex; /* Coloca os itens da lista em linha (horizontalmente) */
 }
 
+/* Estilo para cada item da lista de navegação */
 .navegacao li {
-  margin-left: 20px;
+  margin-left: 20px; /* Adiciona um espaçamento de 20px entre os itens da lista */
 }
 
+/* Estilo dos links de navegação */
 .navegacao a {
-  text-decoration: none;
-  color: rgb(194, 84, 84);
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: rgb(194, 84, 84); /* Define a cor dos links */
 }
-/* Alterar pra colocar as medidas nos dois carroçol */
 
+/* Estilo para o título principal */
 h1 {
-  text-align: center;
-  color: #333;
+  text-align: center; /* Centraliza o título */
+  color: #333; /* Define a cor do texto como um tom escuro de cinza */
 }
 
+/* Estilo do contêiner de cards */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex; /* Exibe os cards em um layout flexível */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte se necessário */
+  justify-content: space-around; /* Distribui os cards uniformemente */
 }
 
+/* Estilo de cada card */
 .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
-  margin: 15px;
-  text-align: center;
+  background-color: #fff; /* Cor de fundo branca */
+  border-radius: 10px; /* Arredonda os cantos dos cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica uma sombra ao redor do card */
+  padding: 20px; /* Espaçamento interno dos cards */
+  max-width: 300px; /* Define uma largura máxima de 300px para os cards */
+  margin: 15px; /* Adiciona margem ao redor de cada card */
+  text-align: center; /* Centraliza o conteúdo do card */
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom ao passar o mouse */
 }
 
+/* Efeito de hover para o card */
+.card:hover {
+  transform: scale(1.05); /* Aumenta o card em 5% quando o mouse passa por cima */
+}
+
+/* Estilo das imagens dentro dos cards */
+.card img {
+  width: 100%; /* Imagem ocupa toda a largura do card */
+  height: 200px; /* Define uma altura fixa para a imagem */
+  object-fit: cover; /* Garante que a imagem se ajuste ao espaço sem distorção */
+  border-radius: 10px; /* Aplica bordas arredondadas às imagens */
+}
+
+/* Estilo do título dentro dos cards */
 .card h2 {
-  font-size: 24px;
-  color: #333;
+  font-size: 24px; /* Define o tamanho da fonte do título */
+  color: #333; /* Define a cor do texto do título */
 }
 
+/* Estilo dos parágrafos dentro dos cards */
 .card p {
-  font-size: 16px;
-  color: #666;
+  font-size: 16px; /* Define o tamanho da fonte do parágrafo */
+  color: #666; /* Define a cor do texto do parágrafo */
 }
 
+/* Estilo do preço dentro dos cards */
 .card .preco {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
+  font-size: 14px; /* Define o tamanho da fonte do preço */
+  font-weight: bold; /* Deixa o texto do preço em negrito */
+  color: #333; /* Define a cor do texto do preço */
 }
 
-
+/* Estilo dos botões dentro dos cards */
 .button {
-  margin-top: 15px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-top: 15px; /* Adiciona um espaçamento acima do botão */
+  background-color: #007BFF; /* Define uma cor de fundo azul para o botão */
+  color: white; /* Define a cor do texto do botão como branco */
+  border: none; /* Remove a borda do botão */
+  padding: 10px 15px; /* Adiciona espaçamento interno ao botão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
 }
 
+/* Efeito de hover para o botão */
 .button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Muda a cor de fundo do botão quando o mouse passa por cima */
 }
 
+/* Estilo do rodapé */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background:#c60025;
-  color: rgb(255, 255, 255);
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Centraliza o texto do rodapé */
+  padding: 1rem; /* Adiciona espaçamento interno ao rodapé */
+  background: #c60025; /* Define a cor de fundo do rodapé */
+  color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+  position: relative; /* Define a posição do rodapé como relativa */
+  bottom: 0; /* Posiciona o rodapé no fundo da página */
+  width: 100%; /* Faz com que o rodapé ocupe toda a largura da página */
+  font-size: 0.9rem; /* Define o tamanho da fonte no rodapé */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Aplica uma sombra superior ao rodapé */
 }
 
-footer p{
-  color: rgb(255, 255, 255);
+/* Estilo do texto dentro do rodapé */
+footer p {
+  color: rgb(255, 255, 255); /* Define a cor do texto no rodapé como branco */
 }
