@@ -62,17 +62,27 @@ function mostrarespacos(espacos) {
         img.style.width = '100%'; // Ajuste o tamanho da imagem como desejar
         card.appendChild(img);
         
-        // Botão de interação
-        const button = document.createElement('button');
-        button.className = 'button';
-        button.textContent = 'Saiba mais';
-        button.onclick = () => alert(`Você escolheu o ${espaco.nome}!`);
-        card.appendChild(button);
 
+        
+        const link = document.createElement("a");
+        link.href = "../formulario_reserva/reserva.html"; // Adiciona o link ao botão
+        link.target = "_blank"; // Abre o link em uma nova aba
+    
+        const button = document.createElement("button");
+        button.className = "button";
+        button.textContent = "Saiba mais";
+    
+    
+        link.appendChild(button);
+        card.appendChild(link);
+    
         // Adiciona o card ao container
         cardContainer.appendChild(card);
-    });
-}
+      });
+    }
+    
+
+
 
 // Chama a função para buscar e mostrar os espaços ao carregar a página
 window.onload = espacos;  // Corrigi o nome da função para 'espacos'

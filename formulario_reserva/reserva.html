@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva</title>
+    <link rel="stylesheet" href="reserva.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="../image/logo.HORIZONTAL.png" alt="logo" />
+        </div>
+  
+        <div class="navegacao">
+          <nav>
+            
+            <ul>
+              <li><a href="../HOME/home.html">Home</a></li>
+              <li><a href="../SobreNos/Sobrenos.html">Sobre nós</a></li>
+              <li>
+                <a href="../politica_de_privacidade/politica_de_privacidade.html">Politica de privacidade</a>
+              </li>
+              <li><a href="../Agendamento/Agendamento.html">Agendamento</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <div class="container">
+        <h1>Reserva de Espaço</h1>
+        <form id="formReserva">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="horario_inicial">Horário Inicial:</label>
+            <input type="datetime-local" id="horario_inicial" name="horario_inicial" required>
+
+            <label for="horario_final">Horário Final:</label>
+            <input type="datetime-local" id="horario_final" name="horario_final" required>
+
+            <label for="num_pessoas">Número de Pessoas:</label>
+            <input type="number" id="num_pessoas" name="num_pessoas" required>
+
+            <label for="espaco">Escolha o espaço:</label>
+            <select id="espaco" name="espaco" required>
+                <option value="" disabled selected>Selecione o espaço</option>
+                <option value="Espaço 1">Quadra I</option>
+                <option value="Espaço 2">Quadra II</option>
+                <option value="Espaço 3">Estudio</option>
+                <option value="Espaço 4">Centro profissionalizante</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </div>
+
+    <!-- Coloque o script no final do body -->
+    <script src="reserva.js"></script>
+</body>
+</html>
