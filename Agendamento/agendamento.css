@@ -74,6 +74,7 @@ h1 {
   margin: 15px; /* Adiciona margem ao redor de cada card */
   text-align: center; /* Centraliza o conteúdo do card */
   transition: transform 0.3s ease; /* Transição suave para o efeito de zoom ao passar o mouse */
+  cursor: pointer;
 }
 
 /* Efeito de hover para o card */
@@ -111,7 +112,7 @@ h1 {
 /* Estilo dos botões dentro dos cards */
 .button {
   margin-top: 15px; /* Adiciona um espaçamento acima do botão */
-  background-color: #007BFF; /* Define uma cor de fundo azul para o botão */
+  background-color:#88001f; /* Define uma cor de fundo azul para o botão */
   color: white; /* Define a cor do texto do botão como branco */
   border: none; /* Remove a borda do botão */
   padding: 10px 15px; /* Adiciona espaçamento interno ao botão */
@@ -119,9 +120,28 @@ h1 {
   cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
 }
 
+#logout-button {
+  background-color: #88001f; /* Define a cor de fundo do botão como um tom de vermelho escuro */
+  color: white; /* Define a cor do texto do botão como branco */
+  border: none; /* Remove a borda ao redor do botão */
+  padding: 10px 15px; /* Adiciona espaçamento interno (padding) ao botão: 10px acima e abaixo, 15px nas laterais */
+  border-radius: 5px; /* Arredonda os cantos do botão com um raio de 5px */
+  cursor: pointer; /* Altera o cursor do mouse para uma mãozinha ao passar sobre o botão, indicando que é clicável */
+  margin-top: -10px; /* Move o botão para cima, diminuindo o espaço superior em 10px */
+}
+
+
+  
+  /* Efeito de hover para o botão */
+  #logout-button:hover {
+    background-color:rgb(69, 10, 10); /* Muda a cor de fundo do botão quando o mouse passa por cima */
+  }
+  
+
+
 /* Efeito de hover para o botão */
 .button:hover {
-  background-color: #0056b3; /* Muda a cor de fundo do botão quando o mouse passa por cima */
+  background-color:rgb(69, 10, 10); /* Muda a cor de fundo do botão quando o mouse passa por cima */
 }
 
 /* Estilo do rodapé */

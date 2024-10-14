@@ -1,6 +1,6 @@
 /* Estilo do plano de fundo */
 body {
-  background-color: rgb(194, 84, 84);
+  background-color: #88001f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ h1 {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 20px 15px rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(236, 149, 149, 0.827);
+  border: 2px solid rgb(69, 10, 10);
   width: 400px;
 }
 

@@ -5,6 +5,42 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 // Cria uma instância do cliente Supabase
 const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY); // Conecta ao Supabase usando a URL e a chave fornecidas
 
+document.addEventListener('DOMContentLoaded', () => {
+    const logoutButton = document.getElementById('logout-button');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', async () => {
+            try {
+                const { error } = await _supabase.auth.signOut();
+                if (error) throw error;
+
+                alert('Deslogado com sucesso!');
+                window.location.href = '../HOME/index.html';
+            } catch (error) {
+                console.error('Erro ao deslogar:', error.message);
+                alert('Erro ao deslogar: ' + error.message);
+            }
+        });
+    }
+});
+
+async function checkAuth() {
+    const { data: { session }, error } = await _supabase.auth.getSession();
+    if (error) {
+        console.error("Erro ao verificar a sessão:", error);
+        alert("Erro ao verificar a sessão.");
+        return;
+    }
+    if (!session) {
+        window.location.href = '../login_cadastro/login.html'; // Redireciona para a página de login se não estiver autenticado
+    }
+}
+
+// Adiciona a verificação de autenticação ao carregar a página
+window.addEventListener('load', async () => {
+    await checkAuth();
+    getData(); // Só chama getData se o usuário estiver autenticado
+});
+
 // Função para buscar os espaços do banco de dados
 async function espacos() {
     console.log('Buscando espaços do banco de dados...');  // Log para confirmar que a função foi chamada corretamente
@@ -86,5 +122,8 @@ function mostrarespacos(espacos) {
       });
 }
 
+
+
 // Chama a função para buscar e mostrar os espaços ao carregar a página
 window.onload = espacos;  // Define a função espacos para ser executada quando a página carregar
+
