@@ -59,6 +59,9 @@ document.getElementById('formReserva').addEventListener('submit', function(event
         } else {
             console.log('Reserva enviada com sucesso:', data);  // Confirma o sucesso
             alert('Reserva enviada com sucesso!');
+            window.location.href = '..//pag_sucesso/sucesso.html'; 
+             
+
         }
     }
 
