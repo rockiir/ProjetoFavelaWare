@@ -141,3 +141,25 @@ footer {
 footer p {
   color: rgb(255, 255, 255); /* Define a cor do texto no rodapé como branco */
 }
+
+.navegacao-footer ul {
+  list-style: none; /* Remove os marcadores (bolinhas) da lista */
+  margin: 0; /* Remove a margem padrão ao redor da lista */
+  padding: 0; /* Remove o preenchimento padrão dentro da lista */
+  display: flex; /* Define o layout da lista como flexível para alinhar os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+.navegacao-footer li {
+  margin-left: 20px; /* Adiciona uma margem à esquerda de 20px em cada item da lista para espaçamento */
+}
+
+.navegacao-footer a {
+  text-decoration: none; /* Remove a linha de sublinhado dos links */
+  color: rgb(247, 231, 231); /* Define a cor do texto dos links para um tom claro de cinza */
+}
+
+.navegacao-footer a:hover {
+  text-decoration: none; /* Mantém a remoção do sublinhado quando o cursor está sobre o link */
+  color: rgb(0, 0, 0); /* Muda a cor do texto dos links para preto quando o cursor está sobre eles */
+}

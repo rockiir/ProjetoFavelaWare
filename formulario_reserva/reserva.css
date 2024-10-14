@@ -7,7 +7,7 @@
 
 /* Estilo para o corpo da página */
 body {
-  font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+  font-family: "Arial", sans-serif; /* Define a fonte padrão */
   background-color: #f7f7f7; /* Cor de fundo clara */
   color: #333; /* Cor do texto */
 }
@@ -127,5 +127,5 @@ button:hover {
 textarea {
   resize: none;
   padding: 10px; /* Espaço interno da área de texto */
- width: 100%;
+  width: 100%;
 }

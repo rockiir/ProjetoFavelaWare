@@ -1,101 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-    --color1: #db445b; /* Paleta 3 */
-    --color2: #9d112e; /* Paleta 3 */
-    --color3: #88001f; /* Paleta 3 */
-    --color4: #646464; /* Paleta 1 */
-    --color5: #7f1924; /* Paleta 1 */
+  --color1: #db445b; /* Paleta 3 */
+  --color2: #9d112e; /* Paleta 3 */
+  --color3: #88001f; /* Paleta 3 */
+  --color4: #646464; /* Paleta 1 */
+  --color5: #7f1924; /* Paleta 1 */
 }
 
 body {
-    font-family: 'Wix Madefor Text', sans-serif;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
-    background-color:rgba(0, 0, 0, 0.084);
-    color: var(--color6); /* Texto branco para contraste */
-    text-align: center;
+  font-family: "Wix Madefor Text", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.084);
+  color: var(--color6); /* Texto branco para contraste */
+  text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: #88001f 4px 3px 5px;
-  }
-  
-  .logo img {
-    max-height: 60px; /* Ajuste a altura da logo se necessário */
-  }
-  
-  .navegacao ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navegacao li {
-    margin-left: 20px;
-  }
-  
-  .navegacao a {
-    text-decoration: none;
-    color: rgb(194, 84, 84);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: #88001f 4px 3px 5px;
+}
+
+.logo img {
+  max-height: 60px; /* Ajuste a altura da logo se necessário */
+}
+
+.navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navegacao li {
+  margin-left: 20px;
+}
+
+.navegacao a {
+  text-decoration: none;
+  color: rgb(194, 84, 84);
+}
 main {
-    padding: 2rem;
-    background: white;
-    max-width: 800px;
-    margin: 2rem auto;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+  padding: 2rem;
+  background: #88001f;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 10px 0px 0px 10px rgb(69, 10, 10);
+  border-radius: 10px;
 }
 
 section ul {
-    list-style: none;
+  list-style: none;
 }
 
 h1 {
-    color: var(--color1);
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: var(--color2);
-    border-bottom: 3px solid var(--color1);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    text-transform: uppercase;
+  color: white;
+  border-bottom: 3px solid var(--color1);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-p, ul {
-    margin-bottom: 1.5rem;
-    color: #c60025;
-    font-size: 1.1rem;
+p,
+ul {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
 ul {
-    padding-left: 0; /* Garante que não há padding */
+  padding-left: 0; /* Garante que não há padding */
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background:#c60025;
-    color: rgb(255, 255, 255);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  background: #c60025;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
-footer p{
-    color: rgb(255, 255, 255);
+.navegacao-footer ul {
+  list-style: none; /* Remove os marcadores (bolinhas) da lista */
+  margin: 0; /* Remove a margem padrão ao redor da lista */
+  padding: 0; /* Remove o preenchimento padrão dentro da lista */
+  display: flex; /* Define o layout da lista como flexível para alinhar os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+.navegacao-footer li {
+  margin-left: 20px; /* Adiciona uma margem à esquerda de 20px em cada item da lista para espaçamento */
+}
+
+.navegacao-footer a {
+  text-decoration: none; /* Remove a linha de sublinhado dos links */
+  color: rgb(
+    247,
+    231,
+    231
+  ); /* Define a cor do texto dos links para um tom claro de cinza */
+}
+
+.navegacao-footer a:hover {
+  text-decoration: none; /* Mantém a remoção do sublinhado quando o cursor está sobre o link */
+  color: rgb(
+    0,
+    0,
+    0
+  ); /* Muda a cor do texto dos links para preto quando o cursor está sobre eles */
 }
