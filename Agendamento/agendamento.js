@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (error) throw error;
 
                 alert('Deslogado com sucesso!');
-                window.location.href = '../index.html';
+                window.location.href = '../HOME/index.html';
             } catch (error) {
                 console.error('Erro ao deslogar:', error.message);
                 alert('Erro ao deslogar: ' + error.message);
