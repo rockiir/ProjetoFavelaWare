@@ -98,7 +98,7 @@ header {
 /* Estilo do footer */
 /* Estilo do footer */
 .footer-container {
-  background-color:  #88001f; /* Cor de fundo do footer */
+  background-color: #88001f; /* Cor de fundo do footer */
   padding: 20px;
   text-align: center;
 }
@@ -153,18 +153,10 @@ h4 {
 
 .navegacao-footer a {
   text-decoration: none; /* Remove a linha de sublinhado dos links */
-  color: rgb(
-    247,
-    231,
-    231
-  ); /* Define a cor do texto dos links para um tom claro de cinza */
+  color: rgb(247, 231, 231); /* Define a cor do texto dos links para um tom claro de cinza */
 }
 
 .navegacao-footer a:hover {
   text-decoration: none; /* Mantém a remoção do sublinhado quando o cursor está sobre o link */
-  color: rgb(
-    0,
-    0,
-    0
-  ); /* Muda a cor do texto dos links para preto quando o cursor está sobre eles */
+  color: rgb(0, 0, 0); /* Muda a cor do texto dos links para preto quando o cursor está sobre eles */
 }
