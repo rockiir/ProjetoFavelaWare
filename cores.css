@@ -1,58 +1,56 @@
 /* PAGINA SOBRE NOS CORES */
 :root {
-    --cor-fundo-pagina: #88001f; /* Cor de fundo da página */
-    --cor-cabecalho: #db445b; /* Cor de fundo do cabeçalho */
-    --cor-link: #ffffff; /* Cor dos links na navegação */
-    --cor-secao-fundo: #c6334c; /* Cor de fundo das seções */
-    --cor-footer: #9d112e; /* Cor de fundo do footer */
-    --cor-titulo: #ffffff; /* Cor dos títulos (h1, h4) */
-    --cor-borda-titulo: #b2223d; /* Cor da borda dos títulos */
-    --cor-texto-paragrafo: #e29e73; /* Cor do texto dos parágrafos (h4) */
-    --cor-hover-secao: #b2223d; /* Cor de fundo das seções ao passar o mouse */
-
-    
+  --cor-fundo-pagina: #88001f; /* Cor de fundo da página */
+  --cor-cabecalho: #db445b; /* Cor de fundo do cabeçalho */
+  --cor-link: #ffffff; /* Cor dos links na navegação */
+  --cor-secao-fundo: #c6334c; /* Cor de fundo das seções */
+  --cor-footer: #9d112e; /* Cor de fundo do footer */
+  --cor-titulo: #ffffff; /* Cor dos títulos (h1, h4) */
+  --cor-borda-titulo: #b2223d; /* Cor da borda dos títulos */
+  --cor-texto-paragrafo: #e29e73; /* Cor do texto dos parágrafos (h4) */
+  --cor-hover-secao: #b2223d; /* Cor de fundo das seções ao passar o mouse */
 }
 
 :root {
-    /* Paleta 1 */
-    --color1-p1: #dc4c5c;
-    --color2-p1: #e9909a;
-    --color3-p1: #6e151f;
-    --color4-p1: #646464;
-    --color5-p1: #7f1924;
+  /* Paleta 1 */
+  --color1-p1: #dc4c5c;
+  --color2-p1: #e9909a;
+  --color3-p1: #6e151f;
+  --color4-p1: #646464;
+  --color5-p1: #7f1924;
 
-    /* Paleta 2 */
-    --color1-p2: #a36648;
-    --color2-p2: #e29e73;
-    --color3-p2: #62321f;
-    --color4-p2: #ae7a66;
-    --color5-p2: #cfb2a4;
+  /* Paleta 2 */
+  --color1-p2: #a36648;
+  --color2-p2: #e29e73;
+  --color3-p2: #62321f;
+  --color4-p2: #ae7a66;
+  --color5-p2: #cfb2a4;
 
-    /* Paleta 3 */
-    --color1-p3: #db445b;
-    --color2-p3: #c6334c;
-    --color3-p3: #b2223d;
-    --color4-p3: #9d112e;
-    --color5-p3: #88001f;
+  /* Paleta 3 */
+  --color1-p3: #db445b;
+  --color2-p3: #c6334c;
+  --color3-p3: #b2223d;
+  --color4-p3: #9d112e;
+  --color5-p3: #88001f;
 
-    /* Paleta 4 */
-    --color1-p4: #c60025;
-    --color2-p4: #d4213a;
-    --color3-p4: #e34250;
-    --color4-p4: #f16265;
-    --color5-p4: #ff837a;
+  /* Paleta 4 */
+  --color1-p4: #c60025;
+  --color2-p4: #d4213a;
+  --color3-p4: #e34250;
+  --color4-p4: #f16265;
+  --color5-p4: #ff837a;
 }
 
 /* Exemplo de uso */
 body {
-    background-color: var(--color4-p1);
-    color: var(--color1-p1);
+  background-color: var(--color4-p1);
+  color: var(--color1-p1);
 }
 
 header {
-    background-color: var(--color3-p1);
+  background-color: var(--color3-p1);
 }
 
 footer {
-    background-color: var(--color3-p1);
+  background-color: var(--color3-p1);
 }

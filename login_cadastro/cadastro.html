@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="./cadastro.css" />
     <title>Cadastro</title>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="cadastro.js" defer></script>
@@ -15,21 +15,11 @@
       <hr />
       <form id="form-signup">
         <label for="signup-nome">Nome:</label>
-        <input
-          type="text"
-          id="signup-nome"
-          required
-          placeholder="Digite seu nome"
-        />
+        <input type="text" id="signup-nome" required placeholder="Digite seu nome" />
         <br />
 
         <label for="signup-sobrenome">Sobrenome:</label>
-        <input
-          type="text"
-          id="signup-sobrenome"
-          required
-          placeholder="Digite seu sobrenome"
-        />
+        <input type="text" id="signup-sobrenome" required placeholder="Digite seu sobrenome" />
         <br />
 
         <label for="signup-nascimento">Data de Nascimento:</label>
@@ -37,21 +27,11 @@
         <br />
 
         <label for="signup-email">Email:</label>
-        <input
-          type="email"
-          id="signup-email"
-          required
-          placeholder="exemplo123@gmail.com"
-        />
+        <input type="email" id="signup-email" required placeholder="exemplo123@gmail.com" />
         <br />
 
         <label for="signup-password">Criar Senha:</label>
-        <input
-          type="password"
-          id="signup-password"
-          required
-          placeholder="*******"
-        />
+        <input type="password" id="signup-password" required placeholder="*******" />
         <br />
 
         <button type="submit">Cadastrar</button>
