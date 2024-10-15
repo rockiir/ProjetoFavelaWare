@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/styles.css",  // Exclui o arquivo CSS do rewrite
         "destination": "/index.html"
       }
     ]
